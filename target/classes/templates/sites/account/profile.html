@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{sites/layout/index.html::dynamic(~{::body})}">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form class="col-sm-6" th:object="${account}" modelAttribute="account"
+        style="margin-top: 200px; margin-left: 350px;">
+        <div class="panel">
+            <div class="panel-heading">
+					<div style="font-size:xx-large; color:brown; font-weight:bold; font-family: Georgia, 'Times New Roman', Times, serif; text-align:center;">
+					 Cập Nhật Thông Tin</div>
+				</div><br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <a>Tên Đăng nhập:</a>
+                        <input style="background-color: #FFFFFF" name="Username" path="username" th:value="${cu.username}" class="form-control" disabled>
+                    </div>
+                    <div class="form-group">
+                        <a>Tên:</a>
+                        <input name="Fullname" path="fullname" th:value="${cu.fullname}" class="form-control">
+                    </div>  
+                
+         <!-- 
+                    <div class="form-group">
+                        <a>Số Điện Thoại:</a>
+                        <input name="Password" path="password" th:value="${cu.phone}" class="form-control">
+                    </div>          
+                    <div class="form-group">
+                        <a>Mật Khẩu:</a>
+                        <input style="background-color: #FFFFFF" name="Password" type="password" th:value="${cu.password}" class="form-control" disabled>
+                    </div>
+                 	
+                </div>  
+            </div>
+                
+            
+         <div class="panel-footer text-right">
+                <button class="btn btn-primary"><a th:href="@{/account/update}" style="color: white">Cập nhật</button>
+            -->
+        
+    </form>
+    </div>
+
+
+
+    <!--================End Search Box Area =================-->
+
+</body>
+
+</html>

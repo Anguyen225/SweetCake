@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{sites/layout/index.html::dynamic(~{::body})}">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form class="col-sm-6" th:object="${account}" modelAttribute="account" method="post"
+    	action="account/forgot"
+        style="margin-top: 200px; margin-left: 350px;">
+        <div class="panel">
+         <div class="panel-heading">
+					<div style="font-size:xx-large; color:brown; font-weight:bold; font-family: Georgia, 'Times New Roman', Times, serif; text-align:center;">
+					 Quên mật khẩu</div>
+				</div><br>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div>Tên Đăng nhập:</div>
+                        <input name="username"  class="form-control" >
+                    </div>                    
+                 	<div class="panel-footer text-right">
+		                <button class="btn btn-primary">Send</button>
+		            </div>
+                </div>  
+            </div>
+                
+        
+        
+    </form>
+    </div>
+
+
+
+    <!--================End Search Box Area =================-->
+
+</body>
+
+</html>
